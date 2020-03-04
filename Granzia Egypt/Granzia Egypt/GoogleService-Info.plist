@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>363108694011-fel2mteqimbie0u5n9i0md854c2keto2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.363108694011-fel2mteqimbie0u5n9i0md854c2keto2</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>363108694011-c8m5728qh1avbsoiudl107u3jku2c979.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBI6543Fii8F95AZYvCIByES8cQlRQSHQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>363108694011</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Abeer.Granzia-Egypt</string>
+	<key>PROJECT_ID</key>
+	<string>granziaegypt</string>
+	<key>STORAGE_BUCKET</key>
+	<string>granziaegypt.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:363108694011:ios:d0d733b87073b7af283d5e</string>
+	<key>DATABASE_URL</key>
+	<string>https://granziaegypt.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		234F4A11219DCF200050D653 /* LocationControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F4A10219DCF200050D653 /* LocationControlViewController.swift */; };
+		2389FE69211F25DC00762583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389FE68211F25DC00762583 /* AppDelegate.swift */; };
+		2389FE6B211F25DC00762583 /* DeviceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389FE6A211F25DC00762583 /* DeviceDetailsVC.swift */; };
+		2389FE6E211F25DC00762583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2389FE6C211F25DC00762583 /* Main.storyboard */; };
+		2389FE70211F25DC00762583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2389FE6F211F25DC00762583 /* Assets.xcassets */; };
+		2389FE73211F25DC00762583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2389FE71211F25DC00762583 /* LaunchScreen.storyboard */; };
+		2389FE7B211FA2FD00762583 /* medicalDevicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389FE7A211FA2FC00762583 /* medicalDevicesList.swift */; };
+		2389FE7F211FAB3600762583 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389FE7E211FAB3600762583 /* Device.swift */; };
+		422A9FFB240C9A0600355515 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFA240C9A0600355515 /* Contact.swift */; };
+		422A9FFD240CB6CB00355515 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFC240CB6CB00355515 /* ContactCell.swift */; };
+		422A9FFF240CB74900355515 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFE240CB74900355515 /* ContactUsVC.swift */; };
+		42AA059524089133008A1EC7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA059424089133008A1EC7 /* CategoryCell.swift */; };
+		42AA059724099A43008A1EC7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA059624099A43008A1EC7 /* DeviceCell.swift */; };
+		42AA05A12409A79D008A1EC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AA05A02409A79D008A1EC7 /* GoogleService-Info.plist */; };
+		42AA05A92409B644008A1EC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05A82409B644008A1EC7 /* AuthService.swift */; };
+		42AA05AB2409B6BB008A1EC7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05AA2409B6BB008A1EC7 /* User.swift */; };
+		42AA05AD2409B6EB008A1EC7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05AC2409B6EB008A1EC7 /* DataService.swift */; };
+		42AA05AF2409B749008A1EC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05AE2409B749008A1EC7 /* Constants.swift */; };
+		42AA05B12409B8A0008A1EC7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05B02409B8A0008A1EC7 /* Category.swift */; };
+		42AA05B5240ABD2C008A1EC7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05B4240ABD2C008A1EC7 /* RoundedButton.swift */; };
+		42AA05B7240ABF25008A1EC7 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05B6240ABF25008A1EC7 /* DescriptionCell.swift */; };
+		42AA05B9240AD9C5008A1EC7 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA05B8240AD9C5008A1EC7 /* RoundedImage.swift */; };
+		7396041384F45A8D1CA3B195 /* Pods_Granzia_Egypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299AA788FBF0A604313E24E9 /* Pods_Granzia_Egypt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		009CE819719922B4A9E8D226 /* Pods-Granzia Egypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Granzia Egypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt.release.xcconfig"; sourceTree = "<group>"; };
+		234F4A10219DCF200050D653 /* LocationControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationControlViewController.swift; sourceTree = "<group>"; };
+		235EF110219D615D002773C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2389FE65211F25DC00762583 /* Granzia Egypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Granzia Egypt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2389FE68211F25DC00762583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2389FE6A211F25DC00762583 /* DeviceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsVC.swift; sourceTree = "<group>"; };
+		2389FE6D211F25DC00762583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2389FE6F211F25DC00762583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2389FE72211F25DC00762583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2389FE74211F25DC00762583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2389FE7A211FA2FC00762583 /* medicalDevicesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicalDevicesList.swift; sourceTree = "<group>"; usesTabs = 1; };
+		2389FE7E211FAB3600762583 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		299AA788FBF0A604313E24E9 /* Pods_Granzia_Egypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Granzia_Egypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422A9FFA240C9A0600355515 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		422A9FFC240CB6CB00355515 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		422A9FFE240CB74900355515 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		426B5E3D240F1E3800981409 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		426B5E3F240F4FCC00981409 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426B5E41240F525B00981409 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		426B5E43240F543200981409 /* abeer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = abeer; path = ../..; sourceTree = "<group>"; };
+		426B5E45240F545100981409 /* GoogleMaps-3.8.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "GoogleMaps-3.8.0"; path = "../../granzia photos/GoogleMaps-3.8.0"; sourceTree = "<group>"; };
+		426B5E47240F54D100981409 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = "../../granzia photos/GoogleMaps-3.8.0/Base/Frameworks/GoogleMapsBase.framework"; sourceTree = "<group>"; };
+		426B5E49240F54F700981409 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../granzia photos/GoogleMaps-3.8.0/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
+		426B5E4A240F54F700981409 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = "../../granzia photos/GoogleMaps-3.8.0/Maps/Frameworks/GoogleMapsCore.framework"; sourceTree = "<group>"; };
+		426B5E4D240F555600981409 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = "../../granzia photos/GooglePlaces-3.8.0/Frameworks/GooglePlaces.framework"; sourceTree = "<group>"; };
+		42AA059424089133008A1EC7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		42AA059624099A43008A1EC7 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		42AA05A02409A79D008A1EC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42AA05A82409B644008A1EC7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		42AA05AA2409B6BB008A1EC7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42AA05AC2409B6EB008A1EC7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		42AA05AE2409B749008A1EC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Granzia Egypt/Serveces/Constants.swift"; sourceTree = SOURCE_ROOT; };
+		42AA05B02409B8A0008A1EC7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		42AA05B4240ABD2C008A1EC7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		42AA05B6240ABF25008A1EC7 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		42AA05B8240AD9C5008A1EC7 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		8D5FF995C69FF9F61B58480B /* Pods-Granzia Egypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Granzia Egypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2389FE62211F25DC00762583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7396041384F45A8D1CA3B195 /* Pods_Granzia_Egypt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235EF10F219D615C002773C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				426B5E4D240F555600981409 /* GooglePlaces.framework */,
+				426B5E49240F54F700981409 /* GoogleMaps.framework */,
+				426B5E4A240F54F700981409 /* GoogleMapsCore.framework */,
+				426B5E47240F54D100981409 /* GoogleMapsBase.framework */,
+				426B5E45240F545100981409 /* GoogleMaps-3.8.0 */,
+				426B5E43240F543200981409 /* abeer */,
+				426B5E41240F525B00981409 /* Messages.framework */,
+				426B5E3F240F4FCC00981409 /* GoogleUtilities.framework */,
+				426B5E3D240F1E3800981409 /* MapKit.framework */,
+				235EF110219D615D002773C9 /* CoreLocation.framework */,
+				299AA788FBF0A604313E24E9 /* Pods_Granzia_Egypt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2389FE5C211F25DC00762583 = {
+			isa = PBXGroup;
+			children = (
+				2389FE67211F25DC00762583 /* Granzia Egypt */,
+				2389FE66211F25DC00762583 /* Products */,
+				235EF10F219D615C002773C9 /* Frameworks */,
+				D34A076A29E03442A732519C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2389FE66211F25DC00762583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2389FE65211F25DC00762583 /* Granzia Egypt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2389FE67211F25DC00762583 /* Granzia Egypt */ = {
+			isa = PBXGroup;
+			children = (
+				42AA05A02409A79D008A1EC7 /* GoogleService-Info.plist */,
+				42AA05992409A3A5008A1EC7 /* Utilities */,
+				42AA059824099F53008A1EC7 /* Serveces */,
+				42AA059124086B9C008A1EC7 /* Model */,
+				42AA059324086BCF008A1EC7 /* View  */,
+				42AA059224086BB5008A1EC7 /* Controller */,
+				2389FE68211F25DC00762583 /* AppDelegate.swift */,
+				2389FE6C211F25DC00762583 /* Main.storyboard */,
+				2389FE6F211F25DC00762583 /* Assets.xcassets */,
+				2389FE71211F25DC00762583 /* LaunchScreen.storyboard */,
+				2389FE74211F25DC00762583 /* Info.plist */,
+			);
+			path = "Granzia Egypt";
+			sourceTree = "<group>";
+		};
+		42AA059124086B9C008A1EC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2389FE7E211FAB3600762583 /* Device.swift */,
+				42AA05AA2409B6BB008A1EC7 /* User.swift */,
+				42AA05B02409B8A0008A1EC7 /* Category.swift */,
+				422A9FFA240C9A0600355515 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42AA059224086BB5008A1EC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2389FE6A211F25DC00762583 /* DeviceDetailsVC.swift */,
+				2389FE7A211FA2FC00762583 /* medicalDevicesList.swift */,
+				234F4A10219DCF200050D653 /* LocationControlViewController.swift */,
+				422A9FFE240CB74900355515 /* ContactUsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42AA059324086BCF008A1EC7 /* View  */ = {
+			isa = PBXGroup;
+			children = (
+				42AA059424089133008A1EC7 /* CategoryCell.swift */,
+				42AA059624099A43008A1EC7 /* DeviceCell.swift */,
+				42AA05B6240ABF25008A1EC7 /* DescriptionCell.swift */,
+				422A9FFC240CB6CB00355515 /* ContactCell.swift */,
+				42AA05B4240ABD2C008A1EC7 /* RoundedButton.swift */,
+				42AA05B8240AD9C5008A1EC7 /* RoundedImage.swift */,
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
+		42AA059824099F53008A1EC7 /* Serveces */ = {
+			isa = PBXGroup;
+			children = (
+				42AA05A82409B644008A1EC7 /* AuthService.swift */,
+				42AA05AC2409B6EB008A1EC7 /* DataService.swift */,
+			);
+			path = Serveces;
+			sourceTree = "<group>";
+		};
+		42AA05992409A3A5008A1EC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				42AA05AE2409B749008A1EC7 /* Constants.swift */,
+			);
+			name = Utilities;
+			path = ../../Community/Community/Services/Utilities;
+			sourceTree = "<group>";
+		};
+		D34A076A29E03442A732519C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D5FF995C69FF9F61B58480B /* Pods-Granzia Egypt.debug.xcconfig */,
+				009CE819719922B4A9E8D226 /* Pods-Granzia Egypt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2389FE64211F25DC00762583 /* Granzia Egypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2389FE77211F25DC00762583 /* Build configuration list for PBXNativeTarget "Granzia Egypt" */;
+			buildPhases = (
+				259401E8EE7E1850F5F7D67E /* [CP] Check Pods Manifest.lock */,
+				2389FE61211F25DC00762583 /* Sources */,
+				2389FE62211F25DC00762583 /* Frameworks */,
+				2389FE63211F25DC00762583 /* Resources */,
+				4BFD61E1856C290CE292BC6F /* [CP] Embed Pods Frameworks */,
+				0F66C1D7312C21C01804040A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Granzia Egypt";
+			productName = "Granzia Egypt";
+			productReference = 2389FE65211F25DC00762583 /* Granzia Egypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2389FE5D211F25DC00762583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Abeer ";
+				TargetAttributes = {
+					2389FE64211F25DC00762583 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2389FE60211F25DC00762583 /* Build configuration list for PBXProject "Granzia Egypt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2389FE5C211F25DC00762583;
+			productRefGroup = 2389FE66211F25DC00762583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2389FE64211F25DC00762583 /* Granzia Egypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2389FE63211F25DC00762583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2389FE73211F25DC00762583 /* LaunchScreen.storyboard in Resources */,
+				42AA05A12409A79D008A1EC7 /* GoogleService-Info.plist in Resources */,
+				2389FE70211F25DC00762583 /* Assets.xcassets in Resources */,
+				2389FE6E211F25DC00762583 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F66C1D7312C21C01804040A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		259401E8EE7E1850F5F7D67E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Granzia Egypt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BFD61E1856C290CE292BC6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2389FE61211F25DC00762583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AA059724099A43008A1EC7 /* DeviceCell.swift in Sources */,
+				422A9FFD240CB6CB00355515 /* ContactCell.swift in Sources */,
+				42AA05AF2409B749008A1EC7 /* Constants.swift in Sources */,
+				2389FE7F211FAB3600762583 /* Device.swift in Sources */,
+				2389FE6B211F25DC00762583 /* DeviceDetailsVC.swift in Sources */,
+				422A9FFF240CB74900355515 /* ContactUsVC.swift in Sources */,
+				422A9FFB240C9A0600355515 /* Contact.swift in Sources */,
+				234F4A11219DCF200050D653 /* LocationControlViewController.swift in Sources */,
+				42AA059524089133008A1EC7 /* CategoryCell.swift in Sources */,
+				42AA05AB2409B6BB008A1EC7 /* User.swift in Sources */,
+				2389FE7B211FA2FD00762583 /* medicalDevicesList.swift in Sources */,
+				42AA05B7240ABF25008A1EC7 /* DescriptionCell.swift in Sources */,
+				2389FE69211F25DC00762583 /* AppDelegate.swift in Sources */,
+				42AA05A92409B644008A1EC7 /* AuthService.swift in Sources */,
+				42AA05AD2409B6EB008A1EC7 /* DataService.swift in Sources */,
+				42AA05B9240AD9C5008A1EC7 /* RoundedImage.swift in Sources */,
+				42AA05B12409B8A0008A1EC7 /* Category.swift in Sources */,
+				42AA05B5240ABD2C008A1EC7 /* RoundedButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2389FE6C211F25DC00762583 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2389FE6D211F25DC00762583 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2389FE71211F25DC00762583 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2389FE72211F25DC00762583 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2389FE75211F25DC00762583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited) ";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited) ";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2389FE76211F25DC00762583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2389FE78211F25DC00762583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5FF995C69FF9F61B58480B /* Pods-Granzia Egypt.debug.xcconfig */;
+			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "$(inherited) ";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Granzia Egypt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Abeer.Granzia-Egypt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2389FE79211F25DC00762583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 009CE819719922B4A9E8D226 /* Pods-Granzia Egypt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Granzia Egypt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Abeer.Granzia-Egypt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2389FE60211F25DC00762583 /* Build configuration list for PBXProject "Granzia Egypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2389FE75211F25DC00762583 /* Debug */,
+				2389FE76211F25DC00762583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2389FE77211F25DC00762583 /* Build configuration list for PBXNativeTarget "Granzia Egypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2389FE78211F25DC00762583 /* Debug */,
+				2389FE79211F25DC00762583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2389FE5D211F25DC00762583 /* Project object */;
+}
