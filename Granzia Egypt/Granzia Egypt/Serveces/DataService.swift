@@ -28,31 +28,6 @@ class DataServices {
         return _REF_CONTACT
     }
     
-    private var selectedDevice : Device?
-    func setSelectedDevice(device: Device){
-        self.selectedDevice = device
-    }
-    var SELECTED_DEVICE : Device? {
-        if selectedDevice != nil {
-            return selectedDevice!
-        }
-        return nil
-    }
-    //---------------------------------------------------------
-    func createDBUres(uid: String , userData: Dictionary<String , Any>){
-        REF_USERS.child(uid).updateChildValues(userData)
-    }
-    
-    func getUserData(uId: String , handler: @escaping (_ userName: String , _ userEmail: String) -> ()){
-        REF_USERS.observeSingleEvent(of: .value) { (usersSnapShot) in
-            guard let usersSnapShot = usersSnapShot.children.allObjects as? [DataSnapshot] else {return}
-            for user in usersSnapShot {
-                if user.key == uId {
-                    handler(user.childSnapshot(forPath: "name").value as! String, user.childSnapshot(forPath: "email").value as! String)
-                }
-            }
-        }
-    }
     
     func getAllCategories(handler: @escaping (_ Categories : [Category]) -> ()) {
         var categories = [Category]()
@@ -79,7 +54,7 @@ class DataServices {
                     let _picURL = URL(string: _pic)
                     let _imageData:NSData = NSData(contentsOf: _picURL!)!
                     let _image = UIImage(data: _imageData as Data)
-                 
+                    
                     let device = Device(Image: _image!, name: _Name, Description: _description, price: _price)
                     products.append(device)
                 }
@@ -89,6 +64,45 @@ class DataServices {
             }
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    private var selectedDevice : Device?
+    func setSelectedDevice(device: Device){
+        self.selectedDevice = device
+    }
+    var SELECTED_DEVICE : Device? {
+        if selectedDevice != nil {
+            return selectedDevice!
+        }
+        return nil
+    }
+    //---------------------------------------------------------
+    func createDBUres(uid: String , userData: Dictionary<String , Any>){
+        REF_USERS.child(uid).updateChildValues(userData)
+    }
+    
+    func getUserData(uId: String , handler: @escaping (_ userName: String , _ userEmail: String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { (usersSnapShot) in
+            guard let usersSnapShot = usersSnapShot.children.allObjects as? [DataSnapshot] else {return}
+            for user in usersSnapShot {
+                if user.key == uId {
+                    handler(user.childSnapshot(forPath: "name").value as! String, user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
+  
     func getContacts(handler : @escaping (_ Distributors: [Contact], _ CustomerServices: [Contact]) -> ()){
         var distributors = [Contact]()
         var customerServices = [Contact]()

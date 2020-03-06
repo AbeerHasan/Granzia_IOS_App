@@ -12,13 +12,18 @@ class ContactCell: UITableViewCell {
 
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var numberLable: UILabel!
-    @IBOutlet weak var callBtn: UIButton!
-    
     
     func setContct(contact: Contact){
         nameLable.text = contact.name
         numberLable.text = contact.number
     }
+    
+    @IBAction func makePhoneCall(_ sender: UIButton) {
+         print("------------ Phone call to \(numberLable.text!)------------")
+         guard let number = numberLable.text , let url = URL(string: "telprompt://\(number)") else {return}
+         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
     /*
     override func awakeFromNib() {
         super.awakeFromNib()

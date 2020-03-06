@@ -18,6 +18,8 @@
 		422A9FFB240C9A0600355515 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFA240C9A0600355515 /* Contact.swift */; };
 		422A9FFD240CB6CB00355515 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFC240CB6CB00355515 /* ContactCell.swift */; };
 		422A9FFF240CB74900355515 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422A9FFE240CB74900355515 /* ContactUsVC.swift */; };
+		4299D4962410A60900C77ACD /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299D4952410A60900C77ACD /* AboutVC.swift */; };
+		4299D4982410EF7400C77ACD /* AdsCell.temp_caseinsensitive_rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299D4972410EF7400C77ACD /* AdsCell.temp_caseinsensitive_rename.swift */; };
 		42AA059524089133008A1EC7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA059424089133008A1EC7 /* CategoryCell.swift */; };
 		42AA059724099A43008A1EC7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA059624099A43008A1EC7 /* DeviceCell.swift */; };
 		42AA05A12409A79D008A1EC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AA05A02409A79D008A1EC7 /* GoogleService-Info.plist */; };
@@ -58,6 +60,8 @@
 		426B5E49240F54F700981409 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../granzia photos/GoogleMaps-3.8.0/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
 		426B5E4A240F54F700981409 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = "../../granzia photos/GoogleMaps-3.8.0/Maps/Frameworks/GoogleMapsCore.framework"; sourceTree = "<group>"; };
 		426B5E4D240F555600981409 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = "../../granzia photos/GooglePlaces-3.8.0/Frameworks/GooglePlaces.framework"; sourceTree = "<group>"; };
+		4299D4952410A60900C77ACD /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		4299D4972410EF7400C77ACD /* AdsCell.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
 		42AA059424089133008A1EC7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		42AA059624099A43008A1EC7 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		42AA05A02409A79D008A1EC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				2389FE7A211FA2FC00762583 /* medicalDevicesList.swift */,
 				234F4A10219DCF200050D653 /* LocationControlViewController.swift */,
 				422A9FFE240CB74900355515 /* ContactUsVC.swift */,
+				4299D4952410A60900C77ACD /* AboutVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				422A9FFC240CB6CB00355515 /* ContactCell.swift */,
 				42AA05B4240ABD2C008A1EC7 /* RoundedButton.swift */,
 				42AA05B8240AD9C5008A1EC7 /* RoundedImage.swift */,
+				4299D4972410EF7400C77ACD /* AdsCell.temp_caseinsensitive_rename.swift */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -212,7 +218,6 @@
 				2389FE62211F25DC00762583 /* Frameworks */,
 				2389FE63211F25DC00762583 /* Resources */,
 				4BFD61E1856C290CE292BC6F /* [CP] Embed Pods Frameworks */,
-				0F66C1D7312C21C01804040A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,26 +282,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F66C1D7312C21C01804040A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Granzia Egypt/Pods-Granzia Egypt-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		259401E8EE7E1850F5F7D67E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +339,7 @@
 				2389FE7F211FAB3600762583 /* Device.swift in Sources */,
 				2389FE6B211F25DC00762583 /* DeviceDetailsVC.swift in Sources */,
 				422A9FFF240CB74900355515 /* ContactUsVC.swift in Sources */,
+				4299D4962410A60900C77ACD /* AboutVC.swift in Sources */,
 				422A9FFB240C9A0600355515 /* Contact.swift in Sources */,
 				234F4A11219DCF200050D653 /* LocationControlViewController.swift in Sources */,
 				42AA059524089133008A1EC7 /* CategoryCell.swift in Sources */,
@@ -363,6 +349,7 @@
 				2389FE69211F25DC00762583 /* AppDelegate.swift in Sources */,
 				42AA05A92409B644008A1EC7 /* AuthService.swift in Sources */,
 				42AA05AD2409B6EB008A1EC7 /* DataService.swift in Sources */,
+				4299D4982410EF7400C77ACD /* AdsCell.temp_caseinsensitive_rename.swift in Sources */,
 				42AA05B9240AD9C5008A1EC7 /* RoundedImage.swift in Sources */,
 				42AA05B12409B8A0008A1EC7 /* Category.swift in Sources */,
 				42AA05B5240ABD2C008A1EC7 /* RoundedButton.swift in Sources */,
@@ -444,7 +431,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "$(inherited) ";
+				OTHER_LDFLAGS = "$(inherited)  ";
 				"OTHER_LDFLAGS[arch=*]" = "$(inherited) ";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;

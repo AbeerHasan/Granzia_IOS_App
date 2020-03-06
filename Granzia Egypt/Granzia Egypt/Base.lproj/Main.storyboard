@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJs-kU-zDE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HMJ-6r-zZW">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,19 +36,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bgm-iM-QcP">
-                                <rect key="frame" x="0.0" y="103.99999999999999" width="414" height="215.66666666666663"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Bgm-iM-QcP" secondAttribute="height" multiplier="457:238" id="z4v-P6-0pY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="15" sectionFooterHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="Elq-jM-psj">
-                                <rect key="frame" x="0.0" y="329.66666666666674" width="414" height="483.33333333333326"/>
+                                <rect key="frame" x="0.0" y="344" width="414" height="469"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="207" id="rYA-G1-wQm" customClass="CategoryCell" customModule="Granzia_Egypt" customModuleProvider="target">
@@ -155,10 +144,13 @@
                                         <rect key="frame" x="374" y="0.0" width="30" height="60"/>
                                         <state key="normal" title="Exit"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-xB-EoR">
-                                        <rect key="frame" x="20" y="0.0" width="83" height="60"/>
-                                        <state key="normal" title="  Log-in " image="ic_logIn">
-                                            <color key="titleColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-xB-EoR">
+                                        <rect key="frame" x="10" y="0.0" width="78.666666666666671" height="60"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="1" height="0.0"/>
+                                        <state key="normal" title=" Log in" image="ic_logIn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -169,38 +161,75 @@
                                     <constraint firstAttribute="trailing" secondItem="LLp-O4-reW" secondAttribute="trailing" constant="10" id="KNs-IQ-eeC"/>
                                     <constraint firstAttribute="height" constant="60" id="Mab-3F-BdC"/>
                                     <constraint firstAttribute="bottom" secondItem="LLp-O4-reW" secondAttribute="bottom" id="Sdd-7w-Ped"/>
-                                    <constraint firstItem="mzb-xB-EoR" firstAttribute="leading" secondItem="0pG-iL-daj" secondAttribute="leading" constant="20" id="lGQ-rv-Taj"/>
+                                    <constraint firstItem="mzb-xB-EoR" firstAttribute="leading" secondItem="0pG-iL-daj" secondAttribute="leading" constant="10" id="lGQ-rv-Taj"/>
                                     <constraint firstItem="mzb-xB-EoR" firstAttribute="top" secondItem="0pG-iL-daj" secondAttribute="top" id="qUP-Ee-hJf"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0pp-Nm-mcQ">
+                                <rect key="frame" x="0.0" y="114" width="414" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0pp-Nm-mcQ" secondAttribute="height" multiplier="207:110" id="EU3-qX-DYx"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Vkx-qK-Fih">
+                                    <size key="itemSize" width="414" height="227"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="adsCell" id="wU8-NG-gPA" customClass="AdsCell" customModule="Granzia_Egypt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-3.6666666666666665" width="414" height="227"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="xE3-m4-sOV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xE3-m4-sOV" secondAttribute="trailing" id="11U-YW-75c"/>
+                                            <constraint firstItem="xE3-m4-sOV" firstAttribute="leading" secondItem="wU8-NG-gPA" secondAttribute="leading" id="7Tn-VN-0mO"/>
+                                            <constraint firstItem="xE3-m4-sOV" firstAttribute="top" secondItem="wU8-NG-gPA" secondAttribute="top" id="SfV-6c-KLo"/>
+                                            <constraint firstAttribute="bottom" secondItem="xE3-m4-sOV" secondAttribute="bottom" id="fPg-rn-tCF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="adImage" destination="xE3-m4-sOV" id="8ao-Bi-AEy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-0z-1ji">
+                                <rect key="frame" x="10" y="297" width="394" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.97301316624365486" green="0.97301316624365486" blue="0.97301316624365486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0pp-Nm-mcQ" firstAttribute="top" secondItem="0pG-iL-daj" secondAttribute="bottom" constant="10" id="4BP-3H-w58"/>
                             <constraint firstItem="0pG-iL-daj" firstAttribute="leading" secondItem="7o6-TV-RuN" secondAttribute="leading" id="5rh-sR-OHJ"/>
+                            <constraint firstItem="pdv-0z-1ji" firstAttribute="bottom" secondItem="0pp-Nm-mcQ" secondAttribute="bottom" id="9tO-NQ-4De"/>
                             <constraint firstItem="Elq-jM-psj" firstAttribute="leading" secondItem="7o6-TV-RuN" secondAttribute="leading" id="Bds-XN-azw"/>
-                            <constraint firstItem="Bgm-iM-QcP" firstAttribute="top" secondItem="7o6-TV-RuN" secondAttribute="top" constant="60" id="H8z-WI-DlL"/>
-                            <constraint firstItem="Elq-jM-psj" firstAttribute="top" secondItem="Bgm-iM-QcP" secondAttribute="bottom" constant="10" id="YfL-9t-wOh"/>
-                            <constraint firstItem="Bgm-iM-QcP" firstAttribute="leading" secondItem="7o6-TV-RuN" secondAttribute="leading" id="Yx2-mW-keL"/>
+                            <constraint firstItem="pdv-0z-1ji" firstAttribute="leading" secondItem="7o6-TV-RuN" secondAttribute="leading" constant="10" id="Ri5-Yy-B3J"/>
+                            <constraint firstItem="Elq-jM-psj" firstAttribute="top" secondItem="0pp-Nm-mcQ" secondAttribute="bottom" constant="10" id="SXe-Ob-TPJ"/>
                             <constraint firstItem="7o6-TV-RuN" firstAttribute="trailing" secondItem="0pG-iL-daj" secondAttribute="trailing" id="baw-4x-DqZ"/>
+                            <constraint firstItem="0pp-Nm-mcQ" firstAttribute="trailing" secondItem="7o6-TV-RuN" secondAttribute="trailing" id="i6I-n5-vYZ"/>
+                            <constraint firstItem="0pp-Nm-mcQ" firstAttribute="leading" secondItem="7o6-TV-RuN" secondAttribute="leading" id="jPX-dq-Iqe"/>
                             <constraint firstItem="0pG-iL-daj" firstAttribute="top" secondItem="7o6-TV-RuN" secondAttribute="top" id="k2n-V1-Z7n"/>
+                            <constraint firstItem="7o6-TV-RuN" firstAttribute="trailing" secondItem="pdv-0z-1ji" secondAttribute="trailing" constant="10" id="rah-SD-Zwk"/>
                             <constraint firstItem="7o6-TV-RuN" firstAttribute="trailing" secondItem="Elq-jM-psj" secondAttribute="trailing" id="sGe-8c-jfl"/>
-                            <constraint firstItem="Bgm-iM-QcP" firstAttribute="trailing" secondItem="7o6-TV-RuN" secondAttribute="trailing" id="y2b-xC-BCN"/>
                             <constraint firstItem="7o6-TV-RuN" firstAttribute="bottom" secondItem="Elq-jM-psj" secondAttribute="bottom" id="zli-ey-5Lg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7o6-TV-RuN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="ic_home_tab_bar" id="CJm-Me-FUf"/>
-                    <navigationItem key="navigationItem" id="Qwu-KZ-G1Z">
-                        <barButtonItem key="leftBarButtonItem" title="Log-in" image="ic_logIn" style="done" id="kwm-wA-P0B">
-                            <color key="tintColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Exit" style="done" id="CAh-FC-ZDp">
-                            <color key="tintColor" red="0.084554484890000003" green="0.1082750223" blue="0.53844781090000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="adsCollectionView" destination="0pp-Nm-mcQ" id="hrM-c1-mCK"/>
                         <outlet property="categoriesTableView" destination="Elq-jM-psj" id="oDQ-Xk-Cst"/>
+                        <outlet property="pageControler" destination="pdv-0z-1ji" id="vEa-bg-Pxp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2I-wv-IKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,140 +239,173 @@
         <!--About-->
         <scene sceneID="C2a-pQ-obk">
             <objects>
-                <viewController id="fUT-ej-YCq" sceneMemberID="viewController">
+                <viewController id="fUT-ej-YCq" customClass="AboutVC" customModule="Granzia_Egypt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqB-nj-uns">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHN-si-Nad">
-                                <rect key="frame" x="0.0" y="304" width="414" height="509"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="Logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KI-ss-xJB">
-                                        <rect key="frame" x="0.0" y="337.33333333333337" width="414" height="100"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="5KI-ss-xJB" secondAttribute="height" multiplier="207:50" id="GeJ-5D-gkm"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" misplaced="YES" image="FB_IMG_1552603407500" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-LZ-HQ4" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="8" width="374" height="249.33333333333337"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="FB_IMG_1552603407500" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-LZ-HQ4" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="276"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tiY-LZ-HQ4" secondAttribute="height" multiplier="3:2" id="GZf-qd-skm"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
+                                                <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="FB_IMG_1552603348272" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnE-A7-fmK" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="336" width="414" height="276"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vnE-A7-fmK" secondAttribute="height" multiplier="3:2" id="hMb-X8-YU9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-vD-aDM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVt-gM-msC">
+                                                <rect key="frame" x="24" y="271" width="371" height="256.66666666666674"/>
+                                                <string key="text">"Granze Egypt is an Italian medical equipment company that sells high quality medical devices worldwide with the best prices and services."</string>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="shadowColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="3" height="-2"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="granzia     egypt" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m03-GF-d89">
+                                                <rect key="frame" x="24" y="138" width="316" height="123"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="316" id="b34-ap-pa2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="shadowColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="0.43680436643835618" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="-8" height="1"/>
+                                            </label>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPT-0W-iV7" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jhi-Xm-W5h">
+                                                        <rect key="frame" x="82" y="21.666666666666671" width="250" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-Ed-d9x" userLabel="facebook btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.12834439212328766" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="8ea-Ed-d9x" secondAttribute="height" multiplier="1:1" id="lnL-Es-1n7"/>
+                                                                </constraints>
+                                                                <state key="normal" image="ic_facebook"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="40"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="getFacebookPage:" destination="fUT-ej-YCq" eventType="touchUpInside" id="CsA-Cq-kBd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="08g-Ko-hJc" userLabel="call us btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
+                                                                <rect key="frame" x="90" y="0.0" width="70" height="70"/>
+                                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.12834439212328766" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="08g-Ko-hJc" secondAttribute="height" id="Kt3-pK-Cqy"/>
+                                                                </constraints>
+                                                                <state key="normal" image="Ic_Contact_phone"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="40"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="joy-5Z-VCs" kind="show" id="Xig-2t-w8S"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-Vr-8XI" userLabel="location btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
+                                                                <rect key="frame" x="180" y="0.0" width="70" height="70"/>
+                                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.12834439212328766" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="jrp-Vr-8XI" secondAttribute="height" multiplier="1:1" id="Inf-Ma-ZlO"/>
+                                                                </constraints>
+                                                                <state key="normal" image="ic_location"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="40"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="PJs-kU-zDE" kind="show" id="zI0-Bx-l4w"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="250" id="rrS-mc-guu"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.91331335616438358" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="113" id="VJg-Xe-Ixg"/>
+                                                    <constraint firstItem="jhi-Xm-W5h" firstAttribute="centerX" secondItem="hPT-0W-iV7" secondAttribute="centerX" id="pQM-7j-DI9"/>
+                                                    <constraint firstItem="jhi-Xm-W5h" firstAttribute="centerY" secondItem="hPT-0W-iV7" secondAttribute="centerY" id="xrn-bz-GEq"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.26298778553299496" green="0.26298778553299496" blue="0.26298778553299496" alpha="0.67535316780821919" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hPT-0W-iV7" firstAttribute="leading" secondItem="KuW-vD-aDM" secondAttribute="leading" id="0YS-yn-47s"/>
+                                            <constraint firstItem="hPT-0W-iV7" firstAttribute="top" secondItem="KuW-vD-aDM" secondAttribute="top" id="HhE-0M-T8m"/>
+                                            <constraint firstItem="CVt-gM-msC" firstAttribute="leading" secondItem="KuW-vD-aDM" secondAttribute="leading" constant="24" id="WY1-xm-FQW"/>
+                                            <constraint firstAttribute="trailing" secondItem="CVt-gM-msC" secondAttribute="trailing" constant="19" id="Zeq-S3-2wX"/>
+                                            <constraint firstItem="m03-GF-d89" firstAttribute="top" secondItem="hPT-0W-iV7" secondAttribute="bottom" constant="25" id="adn-91-FfL"/>
+                                            <constraint firstItem="m03-GF-d89" firstAttribute="leading" secondItem="KuW-vD-aDM" secondAttribute="leading" constant="24" id="g8y-di-30B"/>
+                                            <constraint firstItem="CVt-gM-msC" firstAttribute="top" secondItem="m03-GF-d89" secondAttribute="bottom" constant="10" id="ntr-y7-bKv"/>
+                                            <constraint firstAttribute="trailing" secondItem="hPT-0W-iV7" secondAttribute="trailing" id="twf-zS-4ua"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="tiY-LZ-HQ4" firstAttribute="top" secondItem="sHN-si-Nad" secondAttribute="top" constant="68" id="82I-IK-S7a"/>
-                                    <constraint firstItem="5KI-ss-xJB" firstAttribute="top" secondItem="tiY-LZ-HQ4" secondAttribute="bottom" constant="20" id="Ceu-bY-kaV"/>
-                                    <constraint firstAttribute="trailing" secondItem="tiY-LZ-HQ4" secondAttribute="trailing" constant="20" id="Duc-Kp-5Kc"/>
-                                    <constraint firstItem="tiY-LZ-HQ4" firstAttribute="leading" secondItem="sHN-si-Nad" secondAttribute="leading" constant="20" id="eBZ-1I-c1W"/>
-                                    <constraint firstAttribute="trailing" secondItem="5KI-ss-xJB" secondAttribute="trailing" id="fxY-Ly-cOe"/>
-                                    <constraint firstItem="5KI-ss-xJB" firstAttribute="leading" secondItem="sHN-si-Nad" secondAttribute="leading" id="zJf-y5-Bzw"/>
+                                    <constraint firstAttribute="trailing" secondItem="tiY-LZ-HQ4" secondAttribute="trailing" id="Duc-Kp-5Kc"/>
+                                    <constraint firstAttribute="trailing" secondItem="vnE-A7-fmK" secondAttribute="trailing" id="PB4-HG-dPi"/>
+                                    <constraint firstItem="tiY-LZ-HQ4" firstAttribute="top" secondItem="sHN-si-Nad" secondAttribute="top" constant="60" id="Yut-Hg-dfe"/>
+                                    <constraint firstItem="vnE-A7-fmK" firstAttribute="top" secondItem="tiY-LZ-HQ4" secondAttribute="bottom" id="aAp-NJ-8JK"/>
+                                    <constraint firstAttribute="trailing" secondItem="KuW-vD-aDM" secondAttribute="trailing" id="dQU-Xj-kAf"/>
+                                    <constraint firstItem="KuW-vD-aDM" firstAttribute="leading" secondItem="sHN-si-Nad" secondAttribute="leading" id="e6o-3T-aGt"/>
+                                    <constraint firstItem="tiY-LZ-HQ4" firstAttribute="leading" secondItem="sHN-si-Nad" secondAttribute="leading" id="eBZ-1I-c1W"/>
+                                    <constraint firstItem="vnE-A7-fmK" firstAttribute="leading" secondItem="sHN-si-Nad" secondAttribute="leading" id="wK4-j5-JT8"/>
                                 </constraints>
-                            </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-vD-aDM">
-                                <rect key="frame" x="0.0" y="44" width="414" height="260"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVt-gM-msC">
-                                        <rect key="frame" x="46" y="30" width="323" height="142.66666666666666"/>
-                                        <string key="text">"Granze Egypt is an Italian medical equipment company that sells high quality medical devices worldwide with the best prices and services."</string>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="shadowColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="shadowOffset" width="1" height="1"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jhi-Xm-W5h">
-                                        <rect key="frame" x="117" y="192.66666666666666" width="180" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-Ed-d9x" userLabel="facebook btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <color key="backgroundColor" red="0.13854968547821045" green="0.41380488872528076" blue="0.60511493682861328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="8ea-Ed-d9x" secondAttribute="height" multiplier="1:1" id="lnL-Es-1n7"/>
-                                                </constraints>
-                                                <state key="normal" image="ic_facebook"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08g-Ko-hJc" userLabel="call us btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
-                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
-                                                <color key="backgroundColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="08g-Ko-hJc" secondAttribute="height" id="Kt3-pK-Cqy"/>
-                                                </constraints>
-                                                <state key="normal" image="Ic_Contact_phone"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="joy-5Z-VCs" kind="show" id="Xig-2t-w8S"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrp-Vr-8XI" userLabel="location btn" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
-                                                <rect key="frame" x="130" y="0.0" width="50" height="50"/>
-                                                <color key="backgroundColor" red="0.13854968547821045" green="0.41380488872528076" blue="0.60511493682861328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="jrp-Vr-8XI" secondAttribute="height" multiplier="1:1" id="Inf-Ma-ZlO"/>
-                                                </constraints>
-                                                <state key="normal" image="ic_location"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="PJs-kU-zDE" kind="show" id="6Bg-nN-RcE"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="180" id="rrS-mc-guu"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2443091688" green="0.2443091688" blue="0.2443091688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="CVt-gM-msC" firstAttribute="top" secondItem="KuW-vD-aDM" secondAttribute="top" constant="30" id="7tW-hm-tL8"/>
-                                    <constraint firstItem="CVt-gM-msC" firstAttribute="leading" secondItem="KuW-vD-aDM" secondAttribute="leading" constant="46" id="WY1-xm-FQW"/>
-                                    <constraint firstAttribute="trailing" secondItem="CVt-gM-msC" secondAttribute="trailing" constant="45" id="Zeq-S3-2wX"/>
-                                    <constraint firstAttribute="height" constant="260" id="eeL-bQ-3Mg"/>
-                                    <constraint firstItem="jhi-Xm-W5h" firstAttribute="centerX" secondItem="KuW-vD-aDM" secondAttribute="centerX" id="hVD-Nj-Mnh"/>
-                                    <constraint firstItem="jhi-Xm-W5h" firstAttribute="top" secondItem="CVt-gM-msC" secondAttribute="bottom" constant="20" id="rwY-Gb-eAs"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sHN-si-Nad" firstAttribute="leading" secondItem="k6m-Wo-s47" secondAttribute="leading" id="3qi-1t-jID"/>
                             <constraint firstItem="k6m-Wo-s47" firstAttribute="trailing" secondItem="sHN-si-Nad" secondAttribute="trailing" id="EhY-QO-2pp"/>
-                            <constraint firstItem="KuW-vD-aDM" firstAttribute="trailing" secondItem="k6m-Wo-s47" secondAttribute="trailing" id="IGB-hs-YMj"/>
-                            <constraint firstItem="KuW-vD-aDM" firstAttribute="leading" secondItem="k6m-Wo-s47" secondAttribute="leading" id="Znk-BX-iNJ"/>
-                            <constraint firstItem="KuW-vD-aDM" firstAttribute="top" secondItem="k6m-Wo-s47" secondAttribute="top" id="eET-K4-P30"/>
+                            <constraint firstItem="KuW-vD-aDM" firstAttribute="top" secondItem="k6m-Wo-s47" secondAttribute="top" id="RGI-ul-vfZ"/>
+                            <constraint firstItem="sHN-si-Nad" firstAttribute="top" secondItem="k6m-Wo-s47" secondAttribute="top" id="Rvw-0b-LZL"/>
+                            <constraint firstItem="k6m-Wo-s47" firstAttribute="bottom" secondItem="KuW-vD-aDM" secondAttribute="bottom" id="YGd-VL-U2i"/>
                             <constraint firstItem="k6m-Wo-s47" firstAttribute="bottom" secondItem="sHN-si-Nad" secondAttribute="bottom" id="fPv-C2-oIv"/>
-                            <constraint firstItem="sHN-si-Nad" firstAttribute="top" secondItem="KuW-vD-aDM" secondAttribute="bottom" id="ly7-6X-sRj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6m-Wo-s47"/>
                     </view>
@@ -516,10 +578,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3o-cB-pWc">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKM-vi-4Ob">
-                                        <rect key="frame" x="18" y="244" width="378" height="462"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    <wkWebView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="piW-gL-jlY">
+                                        <rect key="frame" x="0.0" y="190" width="414" height="579"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hZD-GH-nps" customClass="RoundedButton" customModule="Granzia_Egypt" customModuleProvider="target">
                                         <rect key="frame" x="354" y="716" width="50" height="50"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -543,14 +609,11 @@
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="hZD-GH-nps" firstAttribute="width" secondItem="hZD-GH-nps" secondAttribute="height" id="5cw-YZ-Lau"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="LKM-vi-4Ob" secondAttribute="trailing" constant="10" id="6uj-w1-3gh"/>
-                                    <constraint firstItem="hZD-GH-nps" firstAttribute="top" secondItem="LKM-vi-4Ob" secondAttribute="bottom" constant="10" id="SOu-Nh-3Up"/>
-                                    <constraint firstItem="LKM-vi-4Ob" firstAttribute="leading" secondItem="S3o-cB-pWc" secondAttribute="leadingMargin" constant="10" id="oSg-Lt-77x"/>
                                     <constraint firstAttribute="trailing" secondItem="hZD-GH-nps" secondAttribute="trailing" constant="10" id="veK-KI-Wau"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-WV-0Er">
-                                <rect key="frame" x="0.0" y="44" width="414" height="234"/>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-WV-0Er" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="189"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="&quot;We will be so heppy to see you in our company :) &quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsH-GM-TpU">
                                         <rect key="frame" x="34" y="81" width="346" height="72"/>
@@ -566,32 +629,38 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.2443091688" green="0.2443091688" blue="0.2443091688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="lsH-GM-TpU" firstAttribute="centerY" secondItem="1dT-WV-0Er" secondAttribute="centerY" id="3OW-s9-9Bt"/>
+                                    <constraint firstItem="lsH-GM-TpU" firstAttribute="centerY" secondItem="1dT-WV-0Er" secondAttribute="centerY" constant="22.5" id="3OW-s9-9Bt"/>
                                     <constraint firstItem="lsH-GM-TpU" firstAttribute="centerX" secondItem="1dT-WV-0Er" secondAttribute="centerX" id="VaE-io-jVP"/>
-                                    <constraint firstAttribute="height" constant="234" id="zdB-Hv-cVh"/>
+                                    <constraint firstAttribute="height" constant="189" id="zdB-Hv-cVh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MrA-Bu-EGE" firstAttribute="trailing" secondItem="piW-gL-jlY" secondAttribute="trailing" id="40X-0M-p1j"/>
                             <constraint firstItem="1dT-WV-0Er" firstAttribute="top" secondItem="MrA-Bu-EGE" secondAttribute="top" id="8kl-BD-rMS"/>
                             <constraint firstItem="MrA-Bu-EGE" firstAttribute="trailing" secondItem="S3o-cB-pWc" secondAttribute="trailing" priority="750" id="9Eq-YH-plW"/>
                             <constraint firstItem="MrA-Bu-EGE" firstAttribute="bottom" secondItem="S3o-cB-pWc" secondAttribute="bottom" id="BZm-de-Qco"/>
-                            <constraint firstItem="LKM-vi-4Ob" firstAttribute="top" secondItem="1dT-WV-0Er" secondAttribute="bottom" constant="10" id="HxD-Yt-JuL"/>
+                            <constraint firstItem="piW-gL-jlY" firstAttribute="leading" secondItem="MrA-Bu-EGE" secondAttribute="leading" id="KAs-Ly-Ue5"/>
                             <constraint firstItem="S3o-cB-pWc" firstAttribute="top" secondItem="MrA-Bu-EGE" secondAttribute="top" id="L8t-Mt-0v7"/>
+                            <constraint firstItem="piW-gL-jlY" firstAttribute="top" secondItem="1dT-WV-0Er" secondAttribute="bottom" constant="1" id="PBd-hB-1Lo"/>
                             <constraint firstItem="1dT-WV-0Er" firstAttribute="leading" secondItem="MrA-Bu-EGE" secondAttribute="leading" id="XAv-yD-HMi"/>
                             <constraint firstItem="MrA-Bu-EGE" firstAttribute="bottom" secondItem="hZD-GH-nps" secondAttribute="bottom" constant="3" id="ovR-nf-BTE"/>
+                            <constraint firstItem="MrA-Bu-EGE" firstAttribute="bottom" secondItem="piW-gL-jlY" secondAttribute="bottom" id="p1X-FS-hAf"/>
                             <constraint firstAttribute="trailing" secondItem="1dT-WV-0Er" secondAttribute="trailing" id="rKp-xT-Fa7"/>
                             <constraint firstItem="S3o-cB-pWc" firstAttribute="leading" secondItem="MrA-Bu-EGE" secondAttribute="leading" id="rb2-z1-pYz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MrA-Bu-EGE"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapWebView" destination="piW-gL-jlY" id="9Rl-zW-FwI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewj-7e-x3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -619,7 +688,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-h8-jU3">
                                 <rect key="frame" x="20" y="292" width="364" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rrR-h8-jU3" secondAttribute="height" multiplier="28:15" constant="65.333333333333314" id="u9w-1i-dmq"/>
                                 </constraints>
@@ -661,6 +730,9 @@
                                                             <state key="normal" image="ic_contact_us">
                                                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="makePhoneCall:" destination="7KV-NY-EFT" eventType="touchUpInside" id="pX3-KJ-yCb"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -674,9 +746,8 @@
                                                 <constraint firstItem="gTp-j5-3jA" firstAttribute="leading" secondItem="4VV-EP-MPe" secondAttribute="leading" constant="10" id="qdB-QO-1pS"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.60392156862745094" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="callBtn" destination="VsJ-Md-kfa" id="DDg-Vr-aNg"/>
                                             <outlet property="nameLable" destination="6il-02-LRp" id="bo5-CZ-0Zg"/>
                                             <outlet property="numberLable" destination="ndd-h1-uB9" id="apT-Zu-KZG"/>
                                         </connections>
@@ -685,7 +756,7 @@
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eYm-26-Fb4">
                                 <rect key="frame" x="20" y="531" width="364" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eYm-26-Fb4" secondAttribute="height" multiplier="28:15" constant="65.333333333333314" id="7V7-C4-Rhg"/>
                                 </constraints>
@@ -727,6 +798,9 @@
                                                             <state key="normal" image="ic_contact_us">
                                                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="makePhoneCall:" destination="lLW-R6-T0K" eventType="touchUpInside" id="iWQ-Y3-5Pa"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -740,9 +814,8 @@
                                                 <constraint firstItem="iXT-cC-rcE" firstAttribute="top" secondItem="0V3-qt-L5N" secondAttribute="top" constant="10" id="tSj-A3-RCW"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.60392156862745094" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.81009326000000004" green="0.1580674379" blue="0.52838762569999997" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="callBtn" destination="oVt-Ki-px0" id="60L-sc-IYe"/>
                                             <outlet property="nameLable" destination="BvT-OD-wYF" id="Urw-mN-VPI"/>
                                             <outlet property="numberLable" destination="xez-hN-sit" id="F7h-vJ-ShG"/>
                                         </connections>
@@ -768,7 +841,7 @@
                                     <action selector="backPtnPressed:" destination="D9t-uq-67J" eventType="touchUpInside" id="JjG-tM-xZv"/>
                                 </connections>
                             </button>
-                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-mD-B7h">
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-mD-B7h" customClass="RoundedImage" customModule="Granzia_Egypt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="190"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="&quot; Call us to know more about our survices and products or make an order&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBr-bb-rDu">
@@ -791,7 +864,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -823,6 +896,7 @@
                     <connections>
                         <outlet property="DistributersTableView" destination="eYm-26-Fb4" id="fWg-si-aZB"/>
                         <outlet property="customerServiceTableView" destination="rrR-h8-jU3" id="7i8-24-bW7"/>
+                        <outlet property="distributersTableView" destination="eYm-26-Fb4" id="ZOt-cF-c9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bx8-ad-T0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -831,10 +905,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="567" height="425"/>
+        <image name="1" width="600" height="300"/>
+        <image name="FB_IMG_1552603348272" width="1080" height="720"/>
         <image name="FB_IMG_1552603407500" width="1080" height="720"/>
         <image name="Ic_Contact_phone" width="512" height="512"/>
-        <image name="Logo" width="650" height="342"/>
         <image name="backIcon" width="12" height="22"/>
         <image name="ic_about" width="25" height="25"/>
         <image name="ic_contact_us" width="128" height="128"/>

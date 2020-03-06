@@ -62,5 +62,10 @@ extension ContactUsVC : UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! ContactCell
+        /*if cell.callBtn. {
+            print("------------ Phone call to \(cell.numberLable.text!)------------")
+        }*/
+    }
 }
